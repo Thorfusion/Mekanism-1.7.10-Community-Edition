@@ -441,7 +441,7 @@ public class CommonProxy implements IGuiProvider
 		recipes.enableSecurityDesk = Mekanism.configurationrecipes.get("recipes","enableSecurityDesk", true).getBoolean();
 		recipes.enableEnrichmentChamber = Mekanism.configurationrecipes.get("recipes","enableEnrichmentChamber", true).getBoolean();
 		recipes.enableOsmiumCompressor = Mekanism.configurationrecipes.get("recipes","enableOsmiumCompressor", true).getBoolean();
-		recipes.enableCombiner = Mekanism.configurationrecipes.get("recipes","enableCombiner", false).getBoolean();
+		recipes.enableCombiner = Mekanism.configurationrecipes.get("recipes","enableCombiner", true).getBoolean();
 		recipes.enableCrusher = Mekanism.configurationrecipes.get("recipes","enableCrusher", true).getBoolean();
 		recipes.enableDigitalMiner = Mekanism.configurationrecipes.get("recipes","enableDigitalMiner", true).getBoolean();
 		recipes.enableFactories = Mekanism.configurationrecipes.get("recipes","enableFactories", true).getBoolean();

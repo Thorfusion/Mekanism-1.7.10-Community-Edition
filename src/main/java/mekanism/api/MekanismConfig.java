@@ -225,7 +225,7 @@ public class MekanismConfig
 		public static boolean enableSecurityDesk = true;
 		public static boolean enableEnrichmentChamber = true;
 		public static boolean enableOsmiumCompressor = true;
-		public static boolean enableCombiner = false;
+		public static boolean enableCombiner = true;
 		public static boolean enableCrusher = true;
 		public static boolean enableDigitalMiner = true;
 		public static boolean enableFactories = true;
