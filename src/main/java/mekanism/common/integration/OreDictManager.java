@@ -118,7 +118,7 @@ public final class OreDictManager
 				RecipeHandler.addCrusherRecipe(StackUtils.size(ore, 1), new ItemStack(MekanismItems.Dust, 1, resource.ordinal()));
 			}
 
-			if (!Mekanism.hooks.EFRLoaded) {
+			if (!Mekanism.hooks.EFRLoaded && MekanismConfig.recipes.enableCombiner) {
 				try {
 					for (ItemStack ore : OreDictionary.getOres("dust" + resource.getOredictName())) {
 						RecipeHandler.addCombinerRecipe(StackUtils.size(ore, 8), StackUtils.size(OreDictionary.getOres("ore" + resource.getOredictName()).get(0), 1));
@@ -247,7 +247,7 @@ public final class OreDictManager
 					} catch (Exception e) {
 					}
 				}
-				if (!Mekanism.hooks.EFRLoaded) {
+				if (!Mekanism.hooks.EFRLoaded && MekanismConfig.recipes.enableCombiner) {
 					for (ItemStack ore : OreDictionary.getOres("dust" + s)) {
 						try {
 							RecipeHandler.addCombinerRecipe(StackUtils.size(ore, 8), StackUtils.size(OreDictionary.getOres("ore" + s).get(0), 1));
@@ -392,7 +392,9 @@ public final class OreDictManager
 		
 		for(ItemStack ore : OreDictionary.getOres("dustObsidian"))
 		{
-			RecipeHandler.addCombinerRecipe(StackUtils.size(ore, 4), new ItemStack(Blocks.obsidian));
+			if (MekanismConfig.recipes.enableCombiner) {
+				RecipeHandler.addCombinerRecipe(StackUtils.size(ore, 4), new ItemStack(Blocks.obsidian));
+			}
 			RecipeHandler.addMetallurgicInfuserRecipe(InfuseRegistry.get("DIAMOND"), 10, StackUtils.size(ore, 1), new ItemStack(MekanismItems.OtherDust, 1, 5));
 		}
 		
@@ -531,6 +533,31 @@ public final class OreDictManager
 				}
 			}
 			for (ItemStack ore : OreDictionary.getOres("orePoorLead")) {
+				for (ItemStack ore2 : OreDictionary.getOres("clumpLead")) {
+					RecipeHelper.addPurificationChamberRecipe(ore, ore2);
+				}
+			}
+			for (ItemStack ore : OreDictionary.getOres("rawPoorIron")) {
+				for (ItemStack ore2 : OreDictionary.getOres("clumpIron")) {
+					RecipeHelper.addPurificationChamberRecipe(ore, ore2);
+				}
+			}
+			for (ItemStack ore : OreDictionary.getOres("rawPoorGold")) {
+				for (ItemStack ore2 : OreDictionary.getOres("clumpGold")) {
+					RecipeHelper.addPurificationChamberRecipe(ore, ore2);
+				}
+			}
+			for (ItemStack ore : OreDictionary.getOres("rawPoorCopper")) {
+				for (ItemStack ore2 : OreDictionary.getOres("clumpCopper")) {
+					RecipeHelper.addPurificationChamberRecipe(ore, ore2);
+				}
+			}
+			for (ItemStack ore : OreDictionary.getOres("rawPoorTin")) {
+				for (ItemStack ore2 : OreDictionary.getOres("clumpTin")) {
+					RecipeHelper.addPurificationChamberRecipe(ore, ore2);
+				}
+			}
+			for (ItemStack ore : OreDictionary.getOres("rawPoorLead")) {
 				for (ItemStack ore2 : OreDictionary.getOres("clumpLead")) {
 					RecipeHelper.addPurificationChamberRecipe(ore, ore2);
 				}
