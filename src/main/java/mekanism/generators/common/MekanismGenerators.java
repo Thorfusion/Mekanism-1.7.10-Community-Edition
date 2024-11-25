@@ -284,6 +284,8 @@ public class MekanismGenerators implements IModule
 		dataStream.writeDouble(generators.turbineDisperserGasFlow);
 		dataStream.writeInt(generators.condenserRate);
 		dataStream.writeBoolean(mekce_generators.enableWindmillWhitelist);
+        dataStream.writeDouble(mekce_generators.fusionThermocoupleEfficiency);
+        dataStream.writeDouble(mekce_generators.fusionSteamTransferEfficiency);
 
 		dataStream.writeBoolean(generatorsrecipes.enableHeatGenerator);
 		dataStream.writeBoolean(generatorsrecipes.enableSolarGenerator);
@@ -334,6 +336,8 @@ public class MekanismGenerators implements IModule
 		generators.turbineDisperserGasFlow = dataStream.readDouble();
 		generators.condenserRate = dataStream.readInt();
 		mekce_generators.enableWindmillWhitelist = dataStream.readBoolean();
+        mekce_generators.fusionThermocoupleEfficiency = dataStream.readDouble();
+        mekce_generators.fusionSteamTransferEfficiency = dataStream.readDouble();
 
 		generatorsrecipes.enableHeatGenerator = dataStream.readBoolean();
 		generatorsrecipes.enableSolarGenerator = dataStream.readBoolean();
