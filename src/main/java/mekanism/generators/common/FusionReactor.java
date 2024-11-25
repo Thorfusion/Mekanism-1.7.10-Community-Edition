@@ -11,6 +11,7 @@ import java.util.Set;
 
 import mekanism.api.Coord4D;
 import mekanism.api.IHeatTransfer;
+import mekanism.api.MekanismConfig.mekce_generators;
 import mekanism.api.gas.GasRegistry;
 import mekanism.api.gas.GasStack;
 import mekanism.api.gas.GasTank;
@@ -60,8 +61,8 @@ public class FusionReactor implements IFusionReactor
 	public static double plasmaHeatCapacity = 100;
 	public static double caseHeatCapacity = 1;
 	public static double enthalpyOfVaporization = 10;
-	public static double thermocoupleEfficiency = 0.00125;
-	public static double steamTransferEfficiency = 0.0025;
+	public static double thermocoupleEfficiency = mekce_generators.fusionThermocoupleEfficiency;
+	public static double steamTransferEfficiency = mekce_generators.fusionSteamTransferEfficiency;
 
 	//Heat transfer metrics
 	public static double plasmaCaseConductivity = 0.2;
