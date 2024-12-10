@@ -364,6 +364,8 @@ public class TileEntityDigitalMiner extends TileEntityElectricBlock implements I
 		
 		if(!event.isCanceled())
 		{
+		    //return true;
+		    // disable block replacement
 			ItemStack stack = getReplace(index);
 			 
 			if(stack != null)
@@ -505,7 +507,7 @@ public class TileEntityDigitalMiner extends TileEntityElectricBlock implements I
 
 					continue stacks;
 				}
-				else if(testInv[i].isItemEqual(stack) && testInv[i].stackSize+stack.stackSize <= stack.getMaxStackSize())
+				else if(ItemStack.areItemStacksEqual(testInv[i], stack) && testInv[i].stackSize+stack.stackSize <= stack.getMaxStackSize())
 				{
 					testInv[i].stackSize += stack.stackSize;
 					added++;
@@ -553,7 +555,7 @@ public class TileEntityDigitalMiner extends TileEntityElectricBlock implements I
 
 					continue stacks;
 				}
-				else if(inventory[i].isItemEqual(stack) && inventory[i].stackSize+stack.stackSize <= stack.getMaxStackSize())
+				else if(ItemStack.areItemStacksEqual(inventory[i], stack) && inventory[i].stackSize+stack.stackSize <= stack.getMaxStackSize())
 				{
 					inventory[i].stackSize += stack.stackSize;
 
