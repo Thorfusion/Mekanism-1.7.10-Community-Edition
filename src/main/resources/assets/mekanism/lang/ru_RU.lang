@@ -21,6 +21,7 @@ item.CompressedCarbon.name=Сжатый уголь
 item.CompressedRedstone.name=Сжатый красный камень
 item.CompressedDiamond.name=Сжатый алмаз
 item.CompressedObsidian.name=Сжатый обсидиан
+item.CompressedEnder.name=Сжатый аметист Края
 item.PortableTeleporter.name=Переносной телепортер
 item.TeleportationCore.name=Ядро телепортации
 item.Configurator.name=Конфигуратор
@@ -33,7 +34,8 @@ item.Dictionary.name=Словарь
 item.ElectrolyticCore.name=Электролитическое ядро
 item.Sawdust.name=Опилки
 item.Salt.name=Соль
-item.BrineBucket.name=Ведро рапы
+item.Yeast.name=Дрожжи
+item.BrineBucket.name=Ведро рассола
 item.LithiumBucket.name=Ведро лития
 item.HeavyWaterBucket.name=Ведро тяжелой воды
 item.FreeRunners.name=Свободные бегунки
@@ -49,6 +51,7 @@ item.Flamethrower.name=Огнемёт
 item.GaugeDropper.name=Датчик выбрасывателя
 item.BioFuel.name=Биотопливо
 item.CraftingFormula.name=Формула создания
+item.RawOsmiumOre.name=Рудный осмий
 
 //Control Circuits
 item.BasicControlCircuit.name=Базовая схема управления
@@ -84,7 +87,7 @@ tile.BasicBlock.RefinedObsidian.name=Очищенный обсидиан
 tile.BasicBlock.CharcoalBlock.name=Древесноугольный блок
 tile.BasicBlock.RefinedGlowstone.name=Очищенный светящийся камень
 tile.BasicBlock.SteelBlock.name=Стальной блок
-tile.BasicBlock.BinBasic.name=Основной ящик
+tile.BasicBlock.BinBasic.name=Базовый ящик
 tile.BasicBlock.BinAdvanced.name=Продвинутый ящик
 tile.BasicBlock.BinElite.name=Элитный ящик
 tile.BasicBlock.BinUltimate.name=Совершенный ящик
@@ -115,6 +118,7 @@ tile.BasicBlock2.PressureDisperser.name=Распылитель давления
 tile.BasicBlock2.BoilerCasing.name=Обшивка бойлера
 tile.BasicBlock2.BoilerValve.name=Вентиль бойлера
 tile.BasicBlock2.SecurityDesk.name=Защитный блок
+tile.BasicBlock2.RawOsmiumBlock.name=Блок рудного осмия
 
 //Machine Block
 tile.MachineBlock.EnrichmentChamber.name=Камера обогащения
@@ -127,7 +131,7 @@ tile.MachineBlock.PurificationChamber.name=Камера очистки
 tile.MachineBlock.EnergizedSmelter.name=Энергетическая плавильня
 tile.MachineBlock.Teleporter.name=Телепорт
 tile.MachineBlock.ElectricPump.name=Электрическая помпа
-tile.MachineBlock.ElectricChest.name=Электрический сундук
+tile.MachineBlock.PersonalChest.name=Персональный сундук
 tile.MachineBlock.Chargepad.name=Заряжающая панель
 tile.MachineBlock.LogisticalSorter.name=Логистический сортировщик
 tile.MachineBlock.DigitalMiner.name=Цифровой шахтёр
@@ -176,11 +180,16 @@ infuse.redstone=Красный камень
 infuse.fungi=Грибок
 infuse.obsidian=Обсидиан
 infuse.bio=Биомасса
+infuse.ender=Аметист Края
+infuse.lead=Свинец
 
 //Ore Block
 tile.OreBlock.OsmiumOre.name=Осмиевая руда
 tile.OreBlock.CopperOre.name=Медная руда
 tile.OreBlock.TinOre.name=Оловянная руда
+tile.DeepslateOreBlock.OsmiumOre.name=Осмиеносный Глубинный сланец
+tile.DeepslateOreBlock.CopperOre.name=Меденоносный Глубинный сланец
+tile.DeepslateOreBlock.TinOre.name=Оловоносный Глубинный сланец
 
 //Transmitters
 item.MultipartTransmitter.BasicPressurizedTube.name=Базовая герметичная труба
@@ -207,19 +216,20 @@ item.MultipartTransmitter.EliteThermodynamicConductor.name=Элитный теп
 item.MultipartTransmitter.UltimateThermodynamicConductor.name=Совершенный теплопровод
 
 //Glow Panel
-item.GlowPanel.name=Cветящийся полублок
+item.GlowPanel.name=Светящийся полублок
 
 //Energy Cubes
-tile.EnergyCubeBasic.name=Основной энергетический куб
+tile.EnergyCubeBasic.name=Базовый энергетический куб
 tile.EnergyCubeAdvanced.name=Продвинутый энергетический куб
 tile.EnergyCubeElite.name=Элитный энергетический куб
 tile.EnergyCubeUltimate.name=Совершенный энергетический куб
 tile.EnergyCubeCreative.name=Творческий энергетический куб
 
-//Factory Installers
-item.basicFactoryInstaller.name=Основной установщик фабрик
-item.advancedFactoryInstaller.name=Продвинутый установщик фабрик
-item.eliteFactoryInstaller.name=Элитный установщик фабрик
+//Tier Installers
+item.basicTierInstaller.name=Установщик базового уровня
+item.advancedTierInstaller.name=Установщик продвинутого уровня
+item.eliteTierInstaller.name=Установщик элитного уровня
+item.ultimateTierInstaller.name=Установщик совершенного уровня
 
 //Dust
 item.ironDust.name=Железная пыль
@@ -280,6 +290,8 @@ item.glowstoneIngot.name=Слиток светящегося камня
 item.steelIngot.name=Стальной слиток
 item.copperIngot.name=Медный слиток
 item.tinIngot.name=Оловянный слиток
+item.lazuliIngot.name=Лазуритовый слиток
+
 
 //Gasses
 gas.hydrogen=Водород
@@ -291,18 +303,24 @@ gas.sulfurTrioxideGas=Триоксид серы
 gas.sulfuricAcid=Серная кислота
 gas.hydrogenChloride=Хлороводород
 gas.liquidOsmium=Жидкий осмий
+gas.liquidPlatinum=Жидкая платина
 gas.liquidStone=Разжиженный камень
 gas.ethene=Этилен
 gas.sodium=Натрий
-gas.brine=Газообразная рапа
+gas.brine=Газообразный рассол
 gas.deuterium=Дейтерий
 gas.tritium=Тритий
 gas.lithium=Литий
 gas.fusionFuelDT=Дейтерий-тритиевое топливо
+gas.methane=Метан
+gas.biomass=БиоГаз
+gas.bioethanol=Пары этанола
+gas.molasse=Патока
 
 gas.iron=Сульфат железа
 gas.gold=Сульфат золота
 gas.osmium=Сульфат осмия
+gas.platinum=Сульфат платины
 gas.copper=Сульфат меди
 gas.tin=Сульфат олова
 gas.silver=Сульфат серебра
@@ -312,6 +330,7 @@ gas.lead=Сульфат свинца
 gas.cleanIron=Очищенный сульфат железа
 gas.cleanGold=Очищенный сульфат золота
 gas.cleanOsmium=Очищенный сульфат осмия
+gas.cleanPlatinum=Очищенный сульфат платины
 gas.cleanCopper=Очищенный сульфат меди
 gas.cleanTin=Очищенный сульфат олова
 gas.cleanSilver=Очищенный сульфат серебра
@@ -330,7 +349,7 @@ fluid.sulfurDioxideGas=Жидкий диоксид серы
 fluid.sulfurTrioxideGas=Жидкий триоксид серы
 fluid.sulfuricAcid=Жидкая серная кислота
 fluid.hydrogenChloride=Жидкий хлороводород
-fluid.brine=Рапа
+fluid.brine=Рассол
 fluid.ethene=Жидкий этилен
 fluid.sodium=Жидкий натрий
 fluid.heavyWater=Тяжёлая вода
@@ -339,6 +358,10 @@ fluid.deuterium=Жидкий дейтерий
 fluid.tritium=Жидкий тритий
 fluid.fusionFuelDT=Жидкое дейтерий-тритиевое топливо
 fluid.steam=Пар
+fluid.biomass=Биомасса
+fluid.bioethanol=Этанол
+fluid.molasse=Жидкая смола
+
 
 //OreGas names
 oregas.iron=Железная руда
@@ -399,6 +422,12 @@ mekanism.configgui.ctgy.machines=Настройки механизмов
 mekanism.configgui.ctgy.tier=Настройки уровней
 mekanism.configgui.ctgy.usage=Настройки потребления
 mekanism.configgui.ctgy.client=Настройки клиента
+mekanism.configgui.ctgy.mekce=Общие настройки MEK:CE
+mekanism.configgui.ctgy.gengeneral=Настройки Mekanism Generators
+mekanism.configgui.ctgy.mekcegen=Настройки MEK:CE Generators
+mekanism.configgui.ctgy.recipe=Настройки рецептов MEK:CE
+mekanism.configgui.ctgy.mekce_client=Настройки клиента MEK:CE
+mekanism.configgui.ctgy.recipegen=Настройки рецептов MEK:CE Generators
 
 //Config Tooltips
 mekanism.configgui.ctgy.general.tooltip=Общие настройки, касающиеся Mekanism и всех его модулей
@@ -406,6 +435,12 @@ mekanism.configgui.ctgy.machines.tooltip=Настройки, касающиес�
 mekanism.configgui.ctgy.tier.tooltip=Настройки, касающиеся уровней Mekanism и их соответствующих значений
 mekanism.configgui.ctgy.usage.tooltip=Настройки, касающиеся механизмов, и использования ими же энергии
 mekanism.configgui.ctgy.client.tooltip=Настройки клиента относительно Mekanism и всех его модулей
+mekanism.configgui.ctgy.mekce.tooltip=Общие настройки, добавленные MEK:CE
+mekanism.configgui.ctgy.gengeneral.tooltip=Общие настройки, касающиеся Mekanism Generators
+mekanism.configgui.ctgy.mekcegen.tooltip=Общие настройки, добавленные MEK:CE Generators
+mekanism.configgui.ctgy.recipe.tooltip=Настройки рецептов, добавленные MEK:CE
+mekanism.configgui.ctgy.mekce_client.tooltip=Настройки клиента, добавленные MEK:CE
+mekanism.configgui.ctgy.recipegen.tooltip=Настройки рецептов, добавленные MEK:CE Generators
 
 //Gui text
 gui.condensentrating=Конденсация
@@ -485,6 +520,7 @@ gui.undefined=Неопределенно
 gui.owner=Владелец
 gui.public=Общественный
 gui.private=Частный
+gui.trusted=Доверенный
 gui.add=Добавить
 gui.set=Установить
 gui.freq=Частота
@@ -671,6 +707,7 @@ gui.digitalMiner.inverse="Обратный" режим
 gui.digitalMiner.requireReplace=Требуется замена
 gui.digitalMiner.fuzzyMode="Нечёткий" режим
 gui.digitalMiner.missingBlock=Отсутствует блок
+gui.trusted=Доверенный
 
 //Recipe names
 recipe.mekanismShaped=Форменное создание
@@ -698,6 +735,7 @@ tooltip.configurator.plenisherReset=Сбросить расчёт жидкост
 tooltip.configurator.inductionPortMode=Режим передачи индукционного порта переключен на
 tooltip.configurator.toggleColor=Цвет изменён на
 tooltip.configurator.viewColor=Текущий цвет
+tooltip.configurator.reactorPortEject=Порт реактора переключен на
 
 tooltip.upgrade.speed=Скорость
 tooltip.upgrade.energy=Энергия
@@ -758,9 +796,9 @@ tooltip.disassembler.fast=Быстрый
 tooltip.disassembler.vein=Жила
 tooltip.disassembler.off=Откл.
  
-tooltip.filterCard.got=Получены данные фильтра из %s
-tooltip.filterCard.set=Введены данные фильтра типа %s
-tooltip.filterCard.unequal=Неравные форматы данных фильтров
+tooltip.configurationCard.got=Получены данные фильтра из %s
+tooltip.configurationCard.set=Введены данные фильтра типа %s
+tooltip.configurationCard.unequal=Неравные форматы данных фильтров
 
 tooltip.balloon=Воздушный шар
 
@@ -808,7 +846,7 @@ tooltip.PurificationChamber=Продвинутый механизм, спосо�
 tooltip.EnergizedSmelter=Простой механизм, который служит в качестве базовой Mekanism-печи, работающей от энергии.
 tooltip.Teleporter=Механизм, способный телепортировать игроков в различные места, определённые другим телепортом.
 tooltip.ElectricPump=Продвинутая помпа, способная выкачать целое озеро лавы.
-tooltip.ElectricChest=Переносной 54-слотовый сундук, который использует энергию для блокировки содержимого паролем.
+tooltip.PersonalChest=Переносной 54-слотовый сундук, который использует энергию для блокировки содержимого паролем.
 tooltip.Chargepad=Универсальная зарядная панель, которая может заряжать любой заряжаемый предмет из любой модификации.
 tooltip.LogisticalSorter=Основанный на фильтре, продвинутый сортировочный механизм, который может автоматически извлекать указанные предметы в мир и соседние инвентари, а также в логистические транспортеры.
 tooltip.RotaryCondensentrator=Механизм, способный конвертировать газы в жидкость и наоборот.
@@ -830,19 +868,21 @@ tooltip.LaserTractorBeam=Блок, используемый для объеди�
 tooltip.SolarNeutronActivator=Механизм, который направляет нейтронное излучение солнца в свой внутренний резервуар, медленно создавая различные изотопы.
 tooltip.Oredictionificator=Механизм, используемый для унифицирования и переключения между различными предметами и блоками, используя словарь руд.
 tooltip.FuelwoodHeater=Механизм, производящий большое кол-во тепла сжиганием различных горючих предметов.
+tooltip.QuantumEntangloporter=Супер продвинутый блок, способный перемещать абсолютно любой ресурс через огромные расстояния и даже измерения.
 
 tooltip.HeatGenerator=Генератор, который использует тепло лавы или другие горючие ресурсы для производства энергии. Также может работать от тепла.
 tooltip.SolarGenerator=Генератор, который использует энергию солнца для производства энергии.
 tooltip.GasGenerator=Генератор, который использует молекулы различных газов для производства энергии.
 tooltip.BioGenerator=Генератор, который сжигает органические материалы мира для производства энергии.
 tooltip.AdvancedSolarGenerator=Продвинутый генератор, который напрямую поглощает солнечные лучи с небольшой потерей, для производства энергии.
-tooltip.WindTurbine=Генератор, который использует силу ветра для производства энергии, с большей эффективностью на большой высоте.
+tooltip.WindGenerator=Генератор, который использует силу ветра для производства энергии, с большей эффективностью на большой высоте.
 tooltip.TurbineRotor=Стальной стержень изнутри промышленной турбины, к которому крепятся лезвия ротора.
 tooltip.RotationalComplex=Блок, помещаемый на верхний ротор турбины, передающий кинетическую энергию к электромагнитным катушкам.
 tooltip.ElectromagneticCoil=Блок, превращающий кинетическую энергию от вращательного комплекса в электроэнергию.
 tooltip.TurbineCasing=Устойчивая к давлению обшивка для создания промышленной турбины.
 tooltip.TurbineValve=Обшивка турбины с портом для передачи пара и энергии.
 tooltip.TurbineVent=Обшивка турбины с вентилем для выпуска пара, должна быть выше вращательного комплекса.
+tooltip.SaturatingCondenser=Блок, конденсирующий пар, произведенный Промышленной Турбиной назад в воду. Конденсаторы могут быть поставлены как угодно над Вращательным Комплексом.
 
 tooltip.ReactorGlass=Укреплённое стекло, которое используется при строительстве термоядерного реактора.
 tooltip.ReactorLaserFocusMatrix=Панель из реакторного стекла, которая способна поглощать оптическую энергию, нагревая термоядерный реактор.
@@ -964,6 +1004,7 @@ tile.Generator.ElectromagneticCoil.name=Электромагнитная кат�
 tile.Generator.TurbineCasing.name=Обшивка турбины
 tile.Generator.TurbineValve.name=Порт турбины
 tile.Generator.TurbineVent.name=Вентиль турбины
+tile.Generator.SaturatingCondenser.name=Насыщающий конденсатор
 
 tile.Reactor.ReactorController.name=Панель управления реактором
 tile.Reactor.ReactorFrame.name=Каркас реактора
@@ -978,6 +1019,9 @@ tile.ReactorGlass.ReactorLaserFocusMatrix.name=Матрица лазерного
 gui.heatGenerator.fuel=Топливо
 gui.solarGenerator.sun=Солнце
 gui.bioGenerator.bioFuel=Биотопливо
+gui.bioGenerator.bioGas=БиоГаз
+gui.bioGenerator.bioEthanol=Этанол
+
 gui.electrolyticSeparator.dump=Сброс
 
 gui.passive=Воздушное охлаждение
@@ -1082,3 +1126,5 @@ mekanism.configgui.ctgy.tools.tools=Баланс инструментов
 mekanism.configgui.ctgy.tools.general.tooltip=Настройки, касающиеся основной настройки MekanismTools
 mekanism.configgui.ctgy.tools.armor.tooltip=Настройки, касающиеся значений защиты и баланса наборов брони MekanismTools
 mekanism.configgui.ctgy.tools.tools.tooltip=Настройки, касающиеся значений эффективности и баланса наборов инструментов MekanismTools
+
+mekanism.gui.noWind=Ветра нет.
